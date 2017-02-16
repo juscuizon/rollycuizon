@@ -521,6 +521,8 @@ html, body {
     transition: all 0.2s ease-in-out; } }
 
 @media (min-width: 50px) and (max-width: 500px) {
+  .header_navigation {
+    position: fixed; }
   .navigation {
     display: none; }
   #header_navigation_mobile_button {
