@@ -28,6 +28,21 @@ function toggleMenu() {
     } else {
         removeClass(ele, "open");
     }
+
+    var ele2 = document.getElementsByClassName('header_navigation_mobile_container')[0];
+    if (!hasClass(ele2, "right_open")) {
+        addClass(ele2, "right_open");
+    } else {
+        removeClass(ele2, "right_open");
+    }
+
+    var ele3 = document.getElementsByClassName("header_navigation_mobile_button")[0];
+    if (!hasClass(ele3, "right_push")) {
+        addClass(ele3, "right_push");
+    } else {
+        removeClass(ele3, "right_push");
+    }
+    
 }
 
 //Prevent the function to run before the document is loaded

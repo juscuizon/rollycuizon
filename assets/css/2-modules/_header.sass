@@ -1,4 +1,4 @@
-.header_navigation
+.header_navigation_container
 	position: relative 
 	//child absolute
 	margin: 0 -9999rem
@@ -45,18 +45,16 @@
 		image: url(../img/menu_button.svg)
 		repeat: no-repeat
 
-.header_navigation_mobile
+.header_navigation_mobile_container
 	position: fixed
 	display: block
 	top: 0px
-	right: 0px
+	right: -400px
 	background: #bb2506
-	width: 100%
+	width: 400px
 	height: 100%
-	transform: translateX(+100%)
-
 	ul
-		position: relative
+		position: fixed
 		margin-left: 0px
 		padding-left: 20px
 		list-style-type: none
@@ -72,38 +70,35 @@
 
 //==============================Mobile Navigation END=============================
 
-//Medium PC Monitors
-@media (min-width: 960px) and (max-width: 1200px)
-	.navigation
-
-
-//Small Monitors and Large Tablets
-@media (min-width: 801px) and (max-width: 960px)
-	.navigation
-		
-
 //Small Monitors and Tablets 
 @media (min-width: 501px) and (max-width: 800px)
-	.header_navigation
+	.header_navigation_container
 		position: fixed
-
+		background-color: #bb2506
+		
 	.navigation
 		display: none
 
 	#header_navigation_mobile_button
 		display: block
 
+	#header_navigation_mobile_button.right_push
+		right: 420px
+		transition: all 0.2s ease-in-out
+
+	.header_navigation_mobile_container.right_open
+		right: 0px
+		transition: all 0.2s ease-in-out
+
 	.page_container.open
-		transform: translateX(-50%)
+		left: -400px
 		transition: all 0.2s ease-in-out
 			
-
-
 //Mobile Devices
 @media (min-width: 50px) and (max-width: 500px)
-	.header_navigation
+	.header_navigation_container
 		position: fixed
-		
+
 	.navigation
 		display: none
 

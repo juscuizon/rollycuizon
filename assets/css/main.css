@@ -410,12 +410,14 @@ template {
   display: none; }
 
 html, body {
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  min-height: 100vh; }
 
 .page_container {
   position: relative;
   max-width: 1200px;
-  height: 1000px;
+  min-height: 1000px;
+  left: 0px;
   margin: 0px auto; }
 
 @media (min-width: 960px) and (max-width: 1200px) {
@@ -442,7 +444,7 @@ html, body {
     max-width: 500px;
     margin: 0px auto; } }
 
-.header_navigation {
+.header_navigation_container {
   position: relative;
   margin: 0 -9999rem;
   height: 70px;
@@ -482,46 +484,50 @@ html, body {
   background-image: url(../img/menu_button.svg);
   background-repeat: no-repeat; }
 
-.header_navigation_mobile {
+.header_navigation_mobile_container {
   position: fixed;
   display: block;
   top: 0px;
-  right: 0px;
+  right: -400px;
   background: #bb2506;
-  width: 100%;
-  height: 100%;
-  -webkit-transform: translateX(100%);
-      -ms-transform: translateX(100%);
-          transform: translateX(100%); }
-  .header_navigation_mobile ul {
-    position: relative;
+  width: 400px;
+  height: 100%; }
+  .header_navigation_mobile_container ul {
+    position: fixed;
     margin-left: 0px;
     padding-left: 20px;
     list-style-type: none;
     text-align: left; }
-    .header_navigation_mobile ul li {
+    .header_navigation_mobile_container ul li {
       margin-bottom: 20px; }
-    .header_navigation_mobile ul a {
+    .header_navigation_mobile_container ul a {
       font-family: 'Teko', sans-serif;
       text-decoration: none;
       color: white; }
 
 @media (min-width: 501px) and (max-width: 800px) {
-  .header_navigation {
-    position: fixed; }
+  .header_navigation_container {
+    position: fixed;
+    background-color: #bb2506; }
   .navigation {
     display: none; }
   #header_navigation_mobile_button {
     display: block; }
+  #header_navigation_mobile_button.right_push {
+    right: 420px;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out; }
+  .header_navigation_mobile_container.right_open {
+    right: 0px;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out; }
   .page_container.open {
-    -webkit-transform: translateX(-50%);
-        -ms-transform: translateX(-50%);
-            transform: translateX(-50%);
+    left: -400px;
     -webkit-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out; } }
 
 @media (min-width: 50px) and (max-width: 500px) {
-  .header_navigation {
+  .header_navigation_container {
     position: fixed; }
   .navigation {
     display: none; }
