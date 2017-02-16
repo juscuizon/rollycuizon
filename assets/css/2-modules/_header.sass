@@ -82,7 +82,7 @@
 	.navigation
 		
 
-//Small Monitors and Tablets //<------------------------Working here right now
+//Small Monitors and Tablets 
 @media (min-width: 501px) and (max-width: 800px)
 	.header_navigation
 		position: fixed
@@ -104,7 +104,9 @@
 	.navigation
 		display: none
 
-	.header_navigation_mobile
-
-	.header_navigation_mobile_button
+	#header_navigation_mobile_button
 		display: block
+
+	.page_container.open
+		transform: translateX(-50%)
+		transition: all 0.2s ease-in-out

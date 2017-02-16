@@ -523,5 +523,11 @@ html, body {
 @media (min-width: 50px) and (max-width: 500px) {
   .navigation {
     display: none; }
-  .header_navigation_mobile_button {
-    display: block; } }
+  #header_navigation_mobile_button {
+    display: block; }
+  .page_container.open {
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out; } }
