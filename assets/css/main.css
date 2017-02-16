@@ -479,7 +479,7 @@ html, body {
   height: 30px;
   top: 25px;
   right: 20px;
-  background-image: url(/assets/img/menu_button.svg);
+  background-image: url(../img/menu_button.svg);
   background-repeat: no-repeat; }
 
 .header_navigation_mobile {
