@@ -1,1 +1,12 @@
-.footer_container
+mixin footer_navigation_content
+	ul
+		li: a(href="{{site.baseurl}}/index.html") HOME
+		li: a(href="#") ABOUT  
+		li: a(href="#") CONTACT
+
+.footer_navigation_container
+	
+	.footer_logo
+
+	.footer_navigation
+		+footer_navigation_content

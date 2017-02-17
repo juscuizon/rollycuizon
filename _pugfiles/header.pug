@@ -1,19 +1,19 @@
-mixin navigation_content
+mixin header_navigation_content
 	ul
 		li: a(href="{{site.baseurl}}/index.html") HOME
 		li: a(href="#") ABOUT  
 		li: a(href="#") CONTACT
 		
 .header_navigation_container
-	.logo
+	.header_logo
 
-	.navigation
-		+navigation_content
+	.header_navigation
+		+header_navigation_content
 
 	a#header_navigation_mobile_button.header_navigation_mobile_button(href="#") 
 
 .header_navigation_mobile_container
 	#navigation_mobile_id.navigation_mobile_class
-		+navigation_content
+		+header_navigation_content
 
 	
