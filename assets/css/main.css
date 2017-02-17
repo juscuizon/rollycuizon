@@ -461,9 +461,7 @@ html, body {
   height: 50px;
   top: 10px;
   left: 20px;
-  background: white;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out; }
+  background: white; }
 
 .navigation {
   position: absolute;
@@ -546,15 +544,16 @@ html, body {
     display: block; }
   #header_navigation_mobile_button.right_push {
     position: fixed;
-    right: 420px;
+    right: 120px;
     -webkit-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out; }
   .header_navigation_mobile_container.right_open {
     position: fixed;
+    width: 100px;
     right: 0px;
     -webkit-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out; }
   .page_container.open {
-    left: -400px;
+    left: -100px;
     -webkit-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out; } }
