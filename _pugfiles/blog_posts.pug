@@ -1,0 +1,32 @@
+.blog_posts_container
+	ul.posts_list
+		|{% for post in site.posts %}
+		.posts_loop_container_latest
+			.post_title_container
+				h1 
+					a(href="{{ site.baseurl }}{{ post.url }}")
+						|{{ post.title }} <br />
+			.post_date_container
+				p
+					|{{ post.date | date_to_long_string }}
+
+			|{% assign foundImage = 0 %}
+			|{% assign images = post.content | split:"<img " %}
+			|{% for image in images %}
+			|{% if image contains 'src' %}
+			|{% if foundImage == 0 %}
+			|{% assign html = image | split:"/>" | first %}
+			|<img class="featured_image" {{ html }} />
+			|{% assign foundImage = 1 %}
+			|{% endif %}
+			|{% endif %}
+			|{% endfor %}
+			
+			.post_excerpt_container
+				span.post_excerpt
+					|{{ post.excerpt }}
+
+			.read_more_button
+				a(href="{{ site.baseurl }}{{ post.url }}")
+						p ...READ MORE!
+		|{% endfor %}

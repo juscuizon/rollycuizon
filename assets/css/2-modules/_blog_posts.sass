@@ -1,0 +1,288 @@
+.blog_posts_container
+	position: relative
+	width: 1200px
+	min-height: 1200px
+	margin: 0 auto
+	padding-bottom: 100px
+	transition: all 0.2s ease-in-out
+	z-index: 1
+	//border: solid
+		//color: black
+
+.posts_list
+	position: relative
+	width: 640px
+	min-height: 1200px
+	top: -20px
+	//background-color: pink
+	margin: 0 auto
+	transition: all 0.2s ease-in-out
+
+
+	.posts_loop_container_latest
+		position: relative
+		width: 600px
+		height: 600px
+		margin: 0 auto
+		top: 50px
+		left: -20px
+		margin-bottom: 20px
+		border: none
+			radius: 10px
+		box-shadow: 7px 9px 31px 0px rgba(0,0,0,0.75)
+		background-color: #bd3a1e
+		transition: all 0.2s ease-in-out
+
+		.post_title_container
+			position: relative
+			width: 500px
+			height: 50px
+			margin: 0 auto
+			padding: 0px
+			transition: all 0.2s ease-in-out
+			//background-color: red
+
+			a 
+				text-decoration: none
+				font-family: 'Teko', sans-serif;
+				font-size: 40px
+				color: #f3f3f3
+
+			h1
+				position: relative
+				text-align: center
+
+		.post_date_container
+			position: relative
+			width: 500px
+			height: 20px
+			top: -20px
+			margin: 0 auto
+			padding: 0px
+			transition: all 0.2s ease-in-out
+			//background-color: green
+
+			p 
+				position: relative
+				text-align: center
+				text-decoration: none
+				font-family: 'Teko', sans-serif
+				font-size: 18px
+				color: #f3f3f3
+
+		.featured_image
+			position: relative
+			width: 400px
+			height: 300px
+			top: -20px
+			left: 100px
+			padding: 0px
+			transition: all 0.2s ease-in-out
+			//background-color: purple
+
+		.post_excerpt_container
+			position: relative
+			width: 500px
+			height: 150px
+			margin: 0 auto
+			top: -35px
+			padding: 0px
+			text-align: justify
+			transition: all 0.2s ease-in-out
+			//background-color: purple
+
+			p 
+				font-size: 14px
+				color: #f3f3f3
+
+		.read_more_button
+			position: relative
+			width: 150px
+			height: 30px
+			margin: 0 auto
+			top: -35px
+			padding: 0px
+			text-align: center
+			background-color: #bb2506
+			border: none
+				radius: 5px
+			box-shadow: 7px 9px 31px 0px rgba(0,0,0,0.75)
+
+			a 
+				text-decoration: none
+				font-family: 'Teko', sans-serif;
+				font-size: 20px
+				color: #f3f3f3
+
+			p
+				position: relative
+				top: 5px
+
+
+//Medium PC Monitors
+@media (min-width: 960px) and (max-width: 1200px)
+	.blog_posts_container
+		//border: solid
+		transition: all 0.2s ease-in-out
+		margin: 0 auto
+		width: 960px
+
+	.posts_list
+		transition: all 0.2s ease-in-out
+		width: 590px
+		//background-color: pink
+
+		.posts_loop_container_latest
+			transition: all 0.2s ease-in-out
+			width: 550px
+
+		.featured_image
+			//border: solid
+			transition: all 0.2s ease-in-out
+			margin-left: -25px
+
+//Small Monitors and Large Tablets
+@media (min-width: 801px) and (max-width: 960px)
+	.blog_posts_container
+		//border: solid
+		transition: all 0.2s ease-in-out
+		margin: 0 auto
+		width: 800px
+
+	.posts_list
+		transition: all 0.2s ease-in-out
+		width: 590px
+		//background-color: pink
+
+		.posts_loop_container_latest
+			transition: all 0.2s ease-in-out
+			width: 550px
+
+		.featured_image
+			//border: solid
+			transition: all 0.2s ease-in-out
+			margin-left: -25px
+
+
+//Small Monitors and Tablets
+@media (min-width: 501px) and (max-width: 800px)
+	.blog_posts_container
+		//border: solid
+		transition: all 0.2s ease-in-out
+		top: 100px
+		left: 0px
+		width: 500px
+
+	.posts_list
+		transition: all 0.2s ease-in-out
+		width: 450px
+		top: 0px
+		//background-color: pink
+
+		.posts_loop_container_latest
+			transition: all 0.2s ease-in-out
+			top: 0px
+			width: 400px
+			height: 600px
+
+			.post_title_container
+				//border: solid
+					//color: blue
+				transition: all 0.2s ease-in-out
+				width: 350px
+				height: 40px
+
+				h1
+					font-size: 5px 
+
+			.post_date_container
+				//border: solid	
+					//color: violet
+				transition: all 0.2s ease-in-out
+				top: -20px
+				width: 350px
+				height: 25px
+
+				p 
+					font-size: 14px
+
+
+			.featured_image
+				//border: solid
+					//color: green
+				top: -20px
+				left: 50px
+				width: 300px
+				height: 225px
+				transition: all 0.2s ease-in-out
+
+			.post_excerpt_container
+				//border: solid
+					//color: yellow
+				transition: all 0.2s ease-in-out	
+				width: 300px
+				height: 225px
+				top: -20px
+
+
+
+//Mobile Devices
+@media (min-width: 50px) and (max-width: 500px)
+	.blog_posts_container
+		//border: solid
+		transition: all 0.2s ease-in-out
+		top: 100px
+		left: 0px
+		width: 300px
+
+	.posts_list
+		transition: all 0.2s ease-in-out
+		width: 250px
+		top: 0px
+		//background-color: pink
+
+		.posts_loop_container_latest
+			transition: all 0.2s ease-in-out
+			top: 0px
+			left: -40px
+			width: 290px
+			height: 620px
+
+			.post_title_container
+				//border: solid
+					//color: blue
+				transition: all 0.2s ease-in-out
+				width: 290px
+				height: 40px
+
+				h1
+					font-size: 5px 
+
+			.post_date_container
+				//border: solid	
+					//color: violet
+				transition: all 0.2s ease-in-out
+				top: -20px
+				width: 290px
+				height: 25px
+
+				p 
+					font-size: 14px
+
+
+			.featured_image
+				//border: solid
+					//color: green
+				top: -20px
+				left: 12px
+				width: 260px
+				height: 195px
+				transition: all 0.2s ease-in-out
+
+			.post_excerpt_container
+				//border: solid
+					//color: yellow
+				width: 250px
+				height: 280px
+				top: -20px
+

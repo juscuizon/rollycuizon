@@ -15,7 +15,7 @@ function removeClass(ele, cls) {
     }
 }
 
-//Add event from js the keep the marup clean
+//Add event from js to keep the markup clean
 function init() {
     document.getElementById("header_navigation_mobile_button").addEventListener("click", toggleMenu);
 }

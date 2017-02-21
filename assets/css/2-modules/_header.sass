@@ -8,6 +8,7 @@
 	background: #bd3316
 	color: white
 	font-size: 1.125rem
+	z-index: 2
 
 .header_logo
 	position: relative
@@ -51,9 +52,10 @@
 	display: block
 	top: 0px
 	right: -400px
-	background: #bb2506
+	background: #bd3a1e
 	width: 400px
-	min-height: 1000px
+	min-height: 100%
+	z-index: 2
 	transition: all 0.2s ease-in-out
 	ul
 		position: fixed
@@ -76,6 +78,7 @@
 @media (min-width: 501px) and (max-width: 800px)
 	.header_navigation_container
 		position: fixed
+		top: 0px
 		background-color: #bb2506
 		
 	.header_navigation
@@ -103,6 +106,7 @@
 @media (min-width: 50px) and (max-width: 500px)
 	.header_navigation_container
 		position: fixed
+		top: 0px
 		background-color: #bb2506
 		
 	.header_navigation

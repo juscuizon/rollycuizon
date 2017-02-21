@@ -1,0 +1,11 @@
+<div class="blog_posts_container"><ul class="posts_list">{% for post in site.posts %}<div class="posts_loop_container_latest"><div class="post_title_container"><h1> <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }} <br /></a></h1></div><div class="post_date_container"><p>{{ post.date | date_to_long_string }}</p></div>{% assign foundImage = 0 %}
+{% assign images = post.content | split:"<img " %}
+{% for image in images %}
+{% if image contains 'src' %}
+{% if foundImage == 0 %}
+{% assign html = image | split:"/>" | first %}
+<img class="featured_image" {{ html }} />
+{% assign foundImage = 1 %}
+{% endif %}
+{% endif %}
+{% endfor %}<div class="post_excerpt_container"><span class="post_excerpt">{{ post.excerpt }}</span></div><div class="read_more_button"><a href="{{ site.baseurl }}{{ post.url }}"><p>...READ MORE!</p></a></div></div>{% endfor %}</ul></div>
