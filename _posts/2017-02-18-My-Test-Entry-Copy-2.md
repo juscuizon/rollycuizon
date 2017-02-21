@@ -9,4 +9,4 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut at ante sed orci rho
 
 Test Post for Rolly Cuizon Blog.
 
-![profile](/assets/img/avatar.jpg)
+![profile](assets/img/avatar.jpg)
