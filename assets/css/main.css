@@ -457,14 +457,14 @@ body {
   background: #bd3316;
   color: white;
   font-size: 1.125rem;
-  z-index: 2; }
+  z-index: 3; }
 
 .header_logo {
   position: relative;
   width: 50px;
   height: 50px;
   top: 10px;
-  left: 20px;
+  left: 10px;
   background: white; }
 
 .header_navigation {
@@ -486,7 +486,7 @@ body {
   width: 30px;
   height: 30px;
   top: 25px;
-  right: 20px;
+  right: 10px;
   background-image: url(../img/menu_button.svg);
   background-repeat: no-repeat;
   -webkit-transition: all 0.2s ease-in-out;
@@ -502,7 +502,7 @@ body {
   min-height: 100%;
   border-left: none;
     border-left-color: white;
-  z-index: 2;
+  z-index: 3;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out; }
   .header_navigation_mobile_container ul {
@@ -626,7 +626,7 @@ body {
       position: relative;
       width: 500px;
       height: 20px;
-      top: -20px;
+      top: 20px;
       margin: 0 auto;
       padding: 0px;
       -webkit-transition: all 0.2s ease-in-out;
@@ -636,13 +636,13 @@ body {
         text-align: center;
         text-decoration: none;
         font-family: 'Teko', sans-serif;
-        font-size: 18px;
+        font-size: 14px;
         color: #f3f3f3; }
     .posts_list .posts_loop_container_latest .featured_image {
       position: relative;
       width: 400px;
       height: 300px;
-      top: -20px;
+      top: 20px;
       left: 100px;
       padding: 0px;
       -webkit-transition: all 0.2s ease-in-out;
@@ -652,13 +652,13 @@ body {
       width: 500px;
       height: 150px;
       margin: 0 auto;
-      top: -20px;
+      top: 20px;
       padding: 0px;
       text-align: justify;
       -webkit-transition: all 0.2s ease-in-out;
       transition: all 0.2s ease-in-out; }
       .posts_list .posts_loop_container_latest .post_excerpt_container p {
-        font-size: 14px;
+        font-size: 11px;
         color: #f3f3f3; }
     .posts_list .posts_loop_container_latest .read_more_button {
       position: relative;
@@ -731,7 +731,7 @@ body {
       .posts_list .posts_loop_container_latest .post_date_container {
         -webkit-transition: all 0.2s ease-in-out;
         transition: all 0.2s ease-in-out;
-        top: -40px;
+        top: 20px;
         width: 350px;
         height: 25px; }
         .posts_list .posts_loop_container_latest .post_date_container p {
@@ -745,7 +745,7 @@ body {
         transition: all 0.2s ease-in-out;
         width: 400px;
         height: 180px;
-        top: -20px; }
+        top: 20px; }
       .posts_list .posts_loop_container_latest .read_more_button {
         position: relative;
         top: -45px; } }
@@ -780,13 +780,13 @@ body {
       .posts_list .posts_loop_container_latest .post_date_container {
         -webkit-transition: all 0.2s ease-in-out;
         transition: all 0.2s ease-in-out;
-        top: -20px;
+        top: 30px;
         width: 350px;
         height: 25px; }
         .posts_list .posts_loop_container_latest .post_date_container p {
           font-size: 14px; }
       .posts_list .posts_loop_container_latest .featured_image {
-        top: -20px;
+        top: 20px;
         left: 50px;
         width: 300px;
         height: 225px;
@@ -797,7 +797,7 @@ body {
         transition: all 0.2s ease-in-out;
         width: 300px;
         height: 225px;
-        top: -20px; } }
+        top: 20px; } }
 
 @media (min-width: 50px) and (max-width: 500px) {
   .blog_posts_container {
@@ -829,13 +829,13 @@ body {
       .posts_list .posts_loop_container_latest .post_date_container {
         -webkit-transition: all 0.2s ease-in-out;
         transition: all 0.2s ease-in-out;
-        top: -20px;
+        top: 80px;
         width: 290px;
         height: 25px; }
         .posts_list .posts_loop_container_latest .post_date_container p {
           font-size: 14px; }
       .posts_list .posts_loop_container_latest .featured_image {
-        top: -20px;
+        top: 90px;
         left: 12px;
         width: 260px;
         height: 195px;
@@ -844,7 +844,7 @@ body {
       .posts_list .posts_loop_container_latest .post_excerpt_container {
         width: 250px;
         height: 280px;
-        top: -20px; } }
+        top: 90px; } }
 
 .footer_navigation_container {
   position: relative;
@@ -929,19 +929,19 @@ body {
     z-index: 1; }
     .about_me_section .about_me_excerpt p {
       color: white;
-      font-size: 14px;
+      font-size: 11px;
       margin-top: -1px;
       text-align: left; }
   .about_me_section .read_more_button {
     position: relative;
-    top: 0px;
-    left: 195px;
+    top: -57px;
+    left: 90px;
     z-index: 2; }
     .about_me_section .read_more_button a {
       text-decoration: none; }
     .about_me_section .read_more_button p {
       color: skyblue;
-      font-size: 14px; }
+      font-size: 11px; }
 
 .social_media_section {
   position: absolute;
@@ -976,6 +976,11 @@ body {
     left: 80px;
     -webkit-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out; }
+    .about_me_section .read_more_button {
+      top: -58px;
+      left: 90px; }
+      .about_me_section .read_more_button p {
+        font-size: 11px; }
   .social_media_section {
     width: 280px;
     height: 50px;
@@ -990,6 +995,11 @@ body {
     left: 30px;
     -webkit-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out; }
+    .about_me_section .read_more_button {
+      top: -58px;
+      left: 90px; }
+      .about_me_section .read_more_button p {
+        font-size: 11px; }
   .social_media_section {
     width: 280px;
     height: 50px;
@@ -1010,8 +1020,10 @@ body {
     .about_me_section .about_me_excerpt {
       width: 380px; }
     .about_me_section .read_more_button {
-      top: -48px;
-      left: 110px; }
+      top: -94px;
+      left: 320px; }
+      .about_me_section .read_more_button p {
+        font-size: 11px; }
   .social_media_section {
     position: relative;
     width: 400px;
@@ -1045,8 +1057,10 @@ body {
     .about_me_section .about_me_excerpt {
       width: 250px; }
     .about_me_section .read_more_button {
-      top: 16px;
-      left: 75px; }
+      top: -57px;
+      left: 115px; }
+      .about_me_section .read_more_button p {
+        font-size: 11px; }
   .social_media_section {
     position: relative;
     width: 290px;
