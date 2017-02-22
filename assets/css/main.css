@@ -500,7 +500,7 @@ body {
   background: #bd3a1e;
   width: 400px;
   min-height: 100%;
-  border-left: solid;
+  border-left: none;
     border-left-color: white;
   z-index: 2;
   -webkit-transition: all 0.2s ease-in-out;
@@ -534,6 +534,8 @@ body {
     transition: all 0.2s ease-in-out; }
   .header_navigation_mobile_container.right_open {
     position: fixed;
+    border-left: solid;
+      border-left-color: white;
     width: 200px;
     right: 0px;
     -webkit-transition: all 0.2s ease-in-out;
@@ -561,6 +563,8 @@ body {
     position: fixed;
     width: 100px;
     right: 0px;
+    border-left: solid;
+      border-left-color: white;
     -webkit-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out; }
   .page_container.open {
