@@ -590,12 +590,12 @@ body {
     margin: 0 auto;
     top: 50px;
     left: -20px;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
     border: none;
-      -webkit-border-radius: 10px;
-              border-radius: 10px;
-    -webkit-box-shadow: 7px 9px 31px 0px rgba(0, 0, 0, 0.75);
-            box-shadow: 7px 9px 31px 0px rgba(0, 0, 0, 0.75);
+      -webkit-border-radius: 2px;
+              border-radius: 2px;
+    -webkit-box-shadow: 2px 3px 13px -1px #bd3a1e;
+            box-shadow: 2px 3px 13px -1px #bd3a1e;
     background-color: #bd3a1e;
     -webkit-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out; }
@@ -645,7 +645,7 @@ body {
       width: 500px;
       height: 150px;
       margin: 0 auto;
-      top: -35px;
+      top: -20px;
       padding: 0px;
       text-align: justify;
       -webkit-transition: all 0.2s ease-in-out;
@@ -678,6 +678,7 @@ body {
 
 @media (min-width: 960px) and (max-width: 1200px) {
   .blog_posts_container {
+    left: 170px;
     -webkit-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
     margin: 0 auto;
@@ -697,35 +698,65 @@ body {
 
 @media (min-width: 801px) and (max-width: 960px) {
   .blog_posts_container {
+    width: 450px;
+    top: 20px;
+    left: 150px;
     -webkit-transition: all 0.2s ease-in-out;
-    transition: all 0.2s ease-in-out;
-    margin: 0 auto;
-    width: 800px; }
+    transition: all 0.2s ease-in-out; }
   .posts_list {
     -webkit-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
-    width: 590px; }
+    width: 400px; }
     .posts_list .posts_loop_container_latest {
       -webkit-transition: all 0.2s ease-in-out;
       transition: all 0.2s ease-in-out;
-      width: 550px; }
-    .posts_list .featured_image {
-      -webkit-transition: all 0.2s ease-in-out;
-      transition: all 0.2s ease-in-out;
-      margin-left: -25px; } }
+      width: 430px;
+      height: 620px;
+      left: -35px; }
+      .posts_list .posts_loop_container_latest .post_title_container {
+        -webkit-transition: all 0.2s ease-in-out;
+        transition: all 0.2s ease-in-out;
+        padding: 0px;
+        width: 350px;
+        height: 60px; }
+        .posts_list .posts_loop_container_latest .post_title_container h1 {
+          font-size: 5px; }
+      .posts_list .posts_loop_container_latest .post_date_container {
+        -webkit-transition: all 0.2s ease-in-out;
+        transition: all 0.2s ease-in-out;
+        top: -40px;
+        width: 350px;
+        height: 25px; }
+        .posts_list .posts_loop_container_latest .post_date_container p {
+          font-size: 14px; }
+      .posts_list .posts_loop_container_latest .featured_image {
+        -webkit-transition: all 0.2s ease-in-out;
+        transition: all 0.2s ease-in-out;
+        margin-left: -85px; }
+      .posts_list .posts_loop_container_latest .post_excerpt_container {
+        -webkit-transition: all 0.2s ease-in-out;
+        transition: all 0.2s ease-in-out;
+        width: 400px;
+        height: 180px;
+        top: -20px; }
+      .posts_list .posts_loop_container_latest .read_more_button {
+        position: relative;
+        top: -45px; } }
 
 @media (min-width: 501px) and (max-width: 800px) {
   .blog_posts_container {
+    position: relative;
     -webkit-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
-    top: 100px;
+    top: 180px;
     left: 0px;
     width: 500px; }
   .posts_list {
     -webkit-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
     width: 450px;
-    top: 0px; }
+    top: 0px;
+    margin-bottom: 100px; }
     .posts_list .posts_loop_container_latest {
       -webkit-transition: all 0.2s ease-in-out;
       transition: all 0.2s ease-in-out;
@@ -765,14 +796,15 @@ body {
   .blog_posts_container {
     -webkit-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
-    top: 100px;
+    top: 170px;
     left: 0px;
     width: 300px; }
   .posts_list {
     -webkit-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
     width: 250px;
-    top: 0px; }
+    top: 0px;
+    margin-bottom: 100px; }
     .posts_list .posts_loop_container_latest {
       -webkit-transition: all 0.2s ease-in-out;
       transition: all 0.2s ease-in-out;
@@ -857,3 +889,173 @@ body {
 @media (min-width: 50px) and (max-width: 500px) {
   .footer_navigation {
     display: none; } }
+
+.about_me_section {
+  position: absolute;
+  width: 280px;
+  height: 360px;
+  top: 130px;
+  left: 0px;
+  background: #bd3316;
+  -webkit-box-shadow: 2px 3px 13px -1px #bd3316;
+          box-shadow: 2px 3px 13px -1px #bd3316;
+  margin: 0 auto;
+  border: none;
+    -webkit-border-radius: 3px;
+            border-radius: 3px; }
+  .about_me_section .profile_image {
+    background-image: url(../img/profile_image.jpg);
+    position: relative;
+    width: 150px;
+    height: 150px;
+    top: 20px;
+    left: 65px;
+    -webkit-border-radius: 100%;
+            border-radius: 100%; }
+  .about_me_section .about_me_excerpt {
+    position: relative;
+    width: 260px;
+    height: 160px;
+    top: 30px;
+    left: 0px;
+    margin: 0 auto;
+    z-index: 1; }
+    .about_me_section .about_me_excerpt p {
+      color: white;
+      font-size: 14px;
+      margin-top: -1px;
+      text-align: left; }
+  .about_me_section .read_more_button {
+    position: relative;
+    top: 0px;
+    left: 195px;
+    z-index: 1; }
+    .about_me_section .read_more_button a {
+      text-decoration: none; }
+    .about_me_section .read_more_button p {
+      color: white;
+      font-size: 14px; }
+
+.social_media_section {
+  position: absolute;
+  width: 280px;
+  height: 50px;
+  top: 500px;
+  left: 0px;
+  background: #bd3316;
+  -webkit-box-shadow: 2px 3px 13px -1px #bd3316;
+          box-shadow: 2px 3px 13px -1px #bd3316;
+  margin: 0 auto;
+  z-index: 1;
+  border: none;
+    -webkit-border-radius: 3px;
+            border-radius: 3px; }
+  .social_media_section ul {
+    width: 290px;
+    height: 100px;
+    margin-top: 3.5px;
+    margin-left: -20px; }
+    .social_media_section ul li {
+      width: 40px;
+      height: 40px;
+      float: left;
+      padding-right: 25px;
+      list-style-type: none; }
+
+@media (min-width: 960px) and (max-width: 1200px) {
+  .about_me_section {
+    width: 280px;
+    height: 360px;
+    left: 80px;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out; }
+  .social_media_section {
+    width: 280px;
+    height: 50px;
+    left: 80px;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out; } }
+
+@media (min-width: 801px) and (max-width: 960px) {
+  .about_me_section {
+    width: 280px;
+    height: 360px;
+    left: 30px;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out; }
+  .social_media_section {
+    width: 280px;
+    height: 50px;
+    left: 30px;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out; } }
+
+@media (min-width: 501px) and (max-width: 800px) {
+  .about_me_section {
+    position: relative;
+    width: 400px;
+    height: 360px;
+    left: 0px;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out; }
+    .about_me_section .profile_image {
+      left: 120px; }
+    .about_me_section .about_me_excerpt {
+      width: 380px; }
+    .about_me_section .read_more_button {
+      top: -48px;
+      left: 110px; }
+  .social_media_section {
+    position: relative;
+    width: 400px;
+    height: 50px;
+    top: 150px;
+    left: 0px;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out; }
+    .social_media_section ul {
+      width: 290px;
+      height: 50px;
+      margin-left: 40px; }
+    .social_media_section li {
+      width: 40px;
+      height: 40px;
+      float: left;
+      margin-top: 4.5px;
+      padding-right: 25px;
+      list-style-type: none; } }
+
+@media (min-width: 50px) and (max-width: 500px) {
+  .about_me_section {
+    position: relative;
+    width: 290px;
+    height: 390px;
+    left: 0px;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out; }
+    .about_me_section .profile_image {
+      left: 70px; }
+    .about_me_section .about_me_excerpt {
+      width: 250px; }
+    .about_me_section .read_more_button {
+      top: 16px;
+      left: 75px; }
+  .social_media_section {
+    position: relative;
+    width: 290px;
+    height: 50px;
+    top: 150px;
+    left: 0px;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out; }
+    .social_media_section ul {
+      width: 290px;
+      height: 50px;
+      margin-left: -10px; }
+    .social_media_section li {
+      width: 40px;
+      height: 40px;
+      float: left;
+      margin-top: 4.5px;
+      padding-right: 25px;
+      list-style-type: none; } }

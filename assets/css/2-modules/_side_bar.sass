@@ -1,0 +1,204 @@
+.about_me_section
+	position: absolute
+	width: 280px
+	height: 360px
+	top: 130px
+	left: 0px
+	background: #bd3316
+	box-shadow: 2px 3px 13px -1px rgba(189,51,22,1)
+	margin: 0 auto
+	border: none
+		radius: 3px
+
+	.profile_image
+		background: 
+			image: url(../img/profile_image.jpg)
+		position: relative
+		width: 150px
+		height: 150px
+		top: 20px
+		left: 65px
+		border-radius: 100%
+
+	.about_me_excerpt
+		position: relative
+		width: 260px
+		height: 160px
+		top: 30px
+		left: 0px
+		margin: 0 auto
+		z-index: 1
+		//border: solid
+		p 
+			color: white
+			font-size: 14px
+			margin-top: -1px
+			text-align: left
+
+	.read_more_button
+		position: relative
+		top: 0px
+		left: 195px
+		z-index: 1
+
+		a 
+			text-decoration: none
+		p
+			color: white
+			font-size: 14px
+
+.social_media_section
+	position: absolute
+	width: 280px
+	height: 50px
+	top: 500px
+	left: 0px
+	background: #bd3316
+	box-shadow: 2px 3px 13px -1px rgba(189,51,22,1)
+	margin: 0 auto
+	z-index: 1
+	border: none
+		radius: 3px
+	
+	ul
+		width: 290px
+		height: 100px
+		margin-top: 3.5px
+		margin-left: -20px
+
+		
+		li
+			width: 40px
+			height: 40px 
+			float: left
+			padding-right: 25px
+			list-style-type: none
+
+//Medium PC Monitors
+@media (min-width: 960px) and (max-width: 1200px)
+	.about_me_section
+		width: 280px
+		height: 360px
+		left: 80px
+		transition: all 0.2s ease-in-out
+		//border: solid
+
+	.social_media_section
+		width: 280px
+		height: 50px
+		left: 80px
+		transition: all 0.2s ease-in-out
+		//border: solid
+
+//Small Monitors and Large Tablets
+@media (min-width: 801px) and (max-width: 960px)
+	.about_me_section
+		width: 280px
+		height: 360px
+		left: 30px
+		transition: all 0.2s ease-in-out
+		//border: solid
+
+	.social_media_section
+		width: 280px
+		height: 50px
+		left: 30px
+		transition: all 0.2s ease-in-out
+		//border: solid
+
+//Small Monitors and Tablets
+@media (min-width: 501px) and (max-width: 800px)
+	.about_me_section
+		position: relative
+		width: 400px
+		height: 360px
+		left: 0px
+		transition: all 0.2s ease-in-out
+		//border: solid
+
+		.profile_image
+			left: 120px
+
+		.about_me_excerpt
+			//border: solid
+			width: 380px
+		
+
+		.read_more_button
+			//border: solid
+			top: -48px
+			left: 110px
+		
+		
+	.social_media_section
+		position: relative
+		width: 400px
+		height: 50px
+		top: 150px
+		left: 0px
+		transition: all 0.2s ease-in-out
+		//border: solid
+
+		ul
+			width: 290px
+			height: 50px
+			margin-left: 40px
+			//border: solid
+
+		
+		li
+			width: 40px
+			height: 40px 
+			float: left
+			margin-top: 4.5px
+			padding-right: 25px
+			list-style-type: none
+
+//Mobile Devices
+@media (min-width: 50px) and (max-width: 500px)
+	.about_me_section
+		position: relative
+		width: 290px
+		height: 390px
+		left: 0px
+		transition: all 0.2s ease-in-out
+		//border: solid
+
+		.profile_image
+			left: 70px
+
+		.about_me_excerpt
+			//border: solid
+			width: 250px
+		
+
+		.read_more_button
+			//border: solid
+			top: 16px
+			left: 75px
+		
+		
+	.social_media_section
+		position: relative
+		width: 290px
+		height: 50px
+		top: 150px
+		left: 0px
+		transition: all 0.2s ease-in-out
+		//border: solid
+
+		ul
+			width: 290px
+			height: 50px
+			margin-left: -10px
+			//border: solid
+
+		
+		li
+			width: 40px
+			height: 40px 
+			float: left
+			margin-top: 4.5px
+			padding-right: 25px
+			list-style-type: none
+	
