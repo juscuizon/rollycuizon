@@ -499,6 +499,8 @@ body {
   background: #bd3a1e;
   width: 400px;
   min-height: 100%;
+  border-left: solid;
+    border-left-color: white;
   z-index: 2;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out; }
