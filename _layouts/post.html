@@ -3,8 +3,16 @@ title: Rolly Cuizon
 layout: default
 ---
 
-{% include header.html %}
 
-{{ content }}
-
+<div class="article_container">
+	{% include header.html %}
+	{% include side_bar.html %}
+	<div class="content_container">
+		<h1 class="post_title">{{ page.title }}</h1>
+		<p class="post_date">{{ page.date | date_to_long_string }}</p>
+		<div class="post_content">
+			{{ content }}
+		</div>
+	</div>
+</div>
 {% include footer.html %}

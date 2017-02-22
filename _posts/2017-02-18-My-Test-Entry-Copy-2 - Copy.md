@@ -1,5 +1,5 @@
 ---
-title: 'My Test Entry'
+title: 'Crossing to The Other Side '
 date: 2017-02-18 00:00:00 Z
 layout: post
 author: Justin Cuizon
