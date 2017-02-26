@@ -749,7 +749,7 @@ body {
         top: 20px; }
       .posts_list .posts_loop_container_latest .read_more_button {
         position: relative;
-        top: -45px; } }
+        top: -25px; } }
 
 @media (min-width: 501px) and (max-width: 800px) {
   .blog_posts_container {
@@ -819,7 +819,7 @@ body {
       top: 0px;
       left: -40px;
       width: 290px;
-      height: 640px; }
+      height: 665px; }
       .posts_list .posts_loop_container_latest .post_title_container {
         -webkit-transition: all 0.2s ease-in-out;
         transition: all 0.2s ease-in-out;
@@ -847,7 +847,7 @@ body {
         height: 280px;
         top: 90px; }
       .posts_list .posts_loop_container_latest .read_more_button {
-        top: 0px; } }
+        top: 35px; } }
 
 .footer_navigation_container {
   position: relative;
@@ -929,24 +929,16 @@ body {
     top: 30px;
     left: 0px;
     margin: 0 auto;
-    z-index: 1; }
+    z-index: 2; }
     .about_me_section .about_me_excerpt p {
       color: white;
       font-family: 'Open Sans Condensed';
       font-size: 14px;
       margin-top: -1px;
       text-align: left; }
-  .about_me_section .read_more_button {
-    position: relative;
-    top: 0px;
-    left: 90px;
-    z-index: 2; }
-    .about_me_section .read_more_button a {
+    .about_me_section .about_me_excerpt a {
+      color: white;
       text-decoration: none; }
-    .about_me_section .read_more_button p {
-      color: skyblue;
-      font-family: 'Open Sans', sans-serif;
-      font-size: 7px; }
 
 .social_media_section {
   position: absolute;
