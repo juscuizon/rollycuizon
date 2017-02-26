@@ -1,5 +1,5 @@
 ---
-title: 'How to wear Ballet Flats like a fashion girl'
+title: 'How to make a blog from scratch with Jekyll'
 date: 2017-02-18 00:00:00 Z
 layout: post
 author: Justin Cuizon

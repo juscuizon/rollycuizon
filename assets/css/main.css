@@ -1,7 +1,11 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:600i");
 @import url("https://fonts.googleapis.com/css?family=Open+Sans+Condensed:700");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
 @import url("https://fonts.googleapis.com/css?family=Lato:100");
 @import url("https://fonts.googleapis.com/css?family=Teko:600");
+@import url("https://fonts.googleapis.com/css?family=Merriweather");
+@import url("https://fonts.googleapis.com/css?family=Bree+Serif");
+@import url("https://fonts.googleapis.com/css?family=Rokkitt");
 /*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
 /**
  * 1. Change the default font family in all browsers (opinionated).
@@ -423,7 +427,8 @@ body {
   left: 0px;
   margin: 0px auto;
   -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out; }
+  transition: all 0.2s ease-in-out;
+  background-color: #f3f3f3; }
 
 @media (min-width: 960px) and (max-width: 1200px) {
   .page_container {
@@ -465,7 +470,7 @@ body {
   height: 50px;
   top: 10px;
   left: 10px;
-  background: white; }
+  background-color: white; }
 
 .header_navigation {
   position: absolute;
@@ -476,7 +481,7 @@ body {
     margin-right: 50px; }
   .header_navigation ul a {
     text-decoration: none;
-    font-family: 'Teko', sans-serif;
+    font-family: 'Open Sans Condensed';
     font-size: 20px;
     color: #f3f3f3; }
 
@@ -597,12 +602,12 @@ body {
     margin: 0 auto;
     top: 50px;
     left: -20px;
-    margin-bottom: 40px;
+    margin-bottom: 0px;
     border: none;
-      -webkit-border-radius: 2px;
-              border-radius: 2px;
-    -webkit-box-shadow: 2px 3px 13px -1px #bd3a1e;
-            box-shadow: 2px 3px 13px -1px #bd3a1e;
+      -webkit-border-radius: 1px;
+              border-radius: 1px;
+    -webkit-box-shadow: 1px 1px 5px 0px #bd3a1e;
+            box-shadow: 1px 1px 5px 0px #bd3a1e;
     background-color: #bd3a1e;
     -webkit-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out; }
@@ -616,8 +621,8 @@ body {
       transition: all 0.2s ease-in-out; }
       .posts_list .posts_loop_container_latest .post_title_container a {
         text-decoration: none;
-        font-family: 'Teko', sans-serif;
-        font-size: 40px;
+        font-family: 'Open Sans Condensed';
+        font-size: 35px;
         color: #f3f3f3; }
       .posts_list .posts_loop_container_latest .post_title_container h1 {
         position: relative;
@@ -658,29 +663,25 @@ body {
       -webkit-transition: all 0.2s ease-in-out;
       transition: all 0.2s ease-in-out; }
       .posts_list .posts_loop_container_latest .post_excerpt_container p {
-        font-size: 11px;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 13px;
+        line-height: 16px;
         color: #f3f3f3; }
     .posts_list .posts_loop_container_latest .read_more_button {
       position: relative;
       width: 150px;
       height: 30px;
       margin: 0 auto;
-      top: -35px;
+      top: -20px;
       padding: 0px;
-      text-align: center;
-      background-color: #bb2506;
-      border: none;
-        -webkit-border-radius: 5px;
-                border-radius: 5px;
-      -webkit-box-shadow: 7px 9px 31px 0px rgba(0, 0, 0, 0.75);
-              box-shadow: 7px 9px 31px 0px rgba(0, 0, 0, 0.75); }
+      text-align: center; }
       .posts_list .posts_loop_container_latest .read_more_button a {
         text-decoration: none;
-        font-family: 'Teko', sans-serif;
-        font-size: 20px;
-        color: #f3f3f3; }
+        color: skyblue; }
       .posts_list .posts_loop_container_latest .read_more_button p {
         position: relative;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 14px;
         top: 5px; }
 
 @media (min-width: 960px) and (max-width: 1200px) {
@@ -818,7 +819,7 @@ body {
       top: 0px;
       left: -40px;
       width: 290px;
-      height: 620px; }
+      height: 640px; }
       .posts_list .posts_loop_container_latest .post_title_container {
         -webkit-transition: all 0.2s ease-in-out;
         transition: all 0.2s ease-in-out;
@@ -844,7 +845,9 @@ body {
       .posts_list .posts_loop_container_latest .post_excerpt_container {
         width: 250px;
         height: 280px;
-        top: 90px; } }
+        top: 90px; }
+      .posts_list .posts_loop_container_latest .read_more_button {
+        top: 0px; } }
 
 .footer_navigation_container {
   position: relative;
@@ -864,14 +867,14 @@ body {
   width: 100px;
   height: 100px;
   top: 20px;
-  left: 20px;
+  left: 10px;
   background: white; }
 
 .footer_navigation {
   position: relative;
   width: 300px;
   top: -50px;
-  left: 800px; }
+  left: 950px; }
   .footer_navigation ul li {
     display: inline;
     margin-right: 50px; }
@@ -904,12 +907,12 @@ body {
   top: 130px;
   left: 0px;
   background: #bd3316;
-  -webkit-box-shadow: 2px 3px 13px -1px #bd3316;
-          box-shadow: 2px 3px 13px -1px #bd3316;
+  -webkit-box-shadow: 1px 1px 5px 0px #bd3316;
+          box-shadow: 1px 1px 5px 0px #bd3316;
   margin: 0 auto;
   border: none;
-    -webkit-border-radius: 3px;
-            border-radius: 3px; }
+    -webkit-border-radius: 1px;
+            border-radius: 1px; }
   .about_me_section .profile_image {
     background-image: url(../img/profile_image.jpg);
     position: relative;
@@ -929,19 +932,21 @@ body {
     z-index: 1; }
     .about_me_section .about_me_excerpt p {
       color: white;
-      font-size: 11px;
+      font-family: 'Open Sans Condensed';
+      font-size: 14px;
       margin-top: -1px;
       text-align: left; }
   .about_me_section .read_more_button {
     position: relative;
-    top: -57px;
+    top: 0px;
     left: 90px;
     z-index: 2; }
     .about_me_section .read_more_button a {
       text-decoration: none; }
     .about_me_section .read_more_button p {
       color: skyblue;
-      font-size: 11px; }
+      font-family: 'Open Sans', sans-serif;
+      font-size: 7px; }
 
 .social_media_section {
   position: absolute;
@@ -977,10 +982,10 @@ body {
     -webkit-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out; }
     .about_me_section .read_more_button {
-      top: -58px;
+      top: 0px;
       left: 90px; }
       .about_me_section .read_more_button p {
-        font-size: 11px; }
+        font-size: 14px; }
   .social_media_section {
     width: 280px;
     height: 50px;
@@ -996,10 +1001,10 @@ body {
     -webkit-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out; }
     .about_me_section .read_more_button {
-      top: -58px;
+      top: 0px;
       left: 90px; }
       .about_me_section .read_more_button p {
-        font-size: 11px; }
+        font-size: 14px; }
   .social_media_section {
     width: 280px;
     height: 50px;
@@ -1020,10 +1025,10 @@ body {
     .about_me_section .about_me_excerpt {
       width: 380px; }
     .about_me_section .read_more_button {
-      top: -94px;
-      left: 320px; }
+      top: 0px;
+      left: 160px; }
       .about_me_section .read_more_button p {
-        font-size: 11px; }
+        font-size: 14px; }
   .social_media_section {
     position: relative;
     width: 400px;
@@ -1057,10 +1062,10 @@ body {
     .about_me_section .about_me_excerpt {
       width: 250px; }
     .about_me_section .read_more_button {
-      top: -57px;
-      left: 115px; }
+      top: 30px;
+      left: 100px; }
       .about_me_section .read_more_button p {
-        font-size: 11px; }
+        font-size: 14px; }
   .social_media_section {
     position: relative;
     width: 290px;
@@ -1095,20 +1100,36 @@ body {
     top: 50px;
     left: 300px;
     -webkit-transition: all 0.2s ease-in-out;
-    transition: all 0.2s ease-in-out; }
+    transition: all 0.2s ease-in-out;
+    font-family: 'Open Sans Condensed';
+    font-size: 14px;
+    line-height: 20px;
+    padding-bottom: 20px;
+    -webkit-box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.75);
+            box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.75);
+    background-color: white; }
   .article_container .post_title {
+    position: relative;
     width: 400px;
     text-align: center;
+    top: 10px;
     margin: 0 auto;
+    font-size: 30px;
+    line-height: 35px;
     -webkit-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out; }
   .article_container .post_date {
+    position: relative;
     width: 400px;
     text-align: center;
+    top: 20px;
     margin: 0 auto;
+    color: darkgray;
     -webkit-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out; }
   .article_container .post_content {
+    position: relative;
+    top: 20px;
     text-align: center;
     margin: 0 auto;
     -webkit-transition: all 0.2s ease-in-out;
