@@ -10,7 +10,7 @@ collections:
     output: true
 name: Rolly Cuizon
 markdown: kramdown
-highlighter: pygments
+highlighter: rouge
 exclude:
 - node_modules
 - gulpfile.js
